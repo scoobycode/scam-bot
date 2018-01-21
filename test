@@ -1,7 +1,0 @@
-commands.CreateCommand("AboutRein")
-                .Do(async (e) =>
-                {
-                    await e.Channel.SendMessage("
-Reindxxr is our one true savior. Our God himself. Rein is Satan. Rein is the one who believes Adolf Hitler did nothing wrong. Rein is also dumb when it comes to Discord bots. Rein is also a pedo. In order to summon Rein one must say the follow chant : I summon Rein the one true god in which he will bring justice to all! I am his sacrifice and I hope Rein loves me as much as I love him!
-");
-                });
