@@ -1,0 +1,31 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const http = require('http');
+let server;
+
+function handleRequest(request, response) {
+	response.setHeader("Location", "https://github.com/scoobycode/scam-bot");
+	response.statusCode = 307;
+	response.end();
+}
+
+client.on('ready', () => {
+    console.log('I am ready!');
+});
+
+client.on('message', message => {
+    if (message.content === 'Tonakaii') {
+    	message.reply('```Tonakaii is our one true savior. Our God himself. Tona is Satan. Tona is the one who believes Adolf Hitler did nothing wrong. Tona is also dumb when it comes to Discord bots. Tona is also a pedo. In order to summon Tona one must say the follow chant : I summon Tona the one true god in which he will bring justice to all! I am his sacrifice and I hope Tona loves me as much as I love him!```');
+  	}
+});
+
+client.login(process.env.BOT_TOKEN);
+
+server = http.createServer(handleRequest);
+server.listen(process.env.PORT || 8080, (err) => {
+	if (err) {
+		return console.error(err);
+	}
+
+	console.log(`Server started on port ${process.env.PORT || 8080}`);
+});
