@@ -1,0 +1,17 @@
+{
+  "name": "Scam Reports Bot",
+  "version": "1.0.0",
+  "description": "Helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+ 
+
+  "author": "scooby297",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.0"
+  }
+}
